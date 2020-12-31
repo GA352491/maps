@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'lwh3b@x%7d$6mrc5##ukm__k^2qx#p771hr8q0z8=k=w@p^hb%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['maps360.herokuapp.com']
 
 
 # Application definition
