@@ -14,7 +14,7 @@ def home(request):
         feature["id"] = feature["properties"]["state_code"]
         state_id_map[feature["properties"]["st_nm"]] = feature["id"]
 
-    df = pd.read_excel(r'/Users/AnishGanga/Desktop/map.xlsx')
+    df = pd.read_excel(r'density/static/map.xlsx')
 
     df['Density'] = df['Density[a]'].apply(lambda x: int(x.split("/")[0].replace(",", "")))
     df["id"] = df["State or union territory"].apply(lambda x: state_id_map[x])
